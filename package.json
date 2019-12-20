@@ -1,0 +1,47 @@
+{
+	"name": "shrine512",
+	"version": "1.0.0",
+	"description": "Convenient and extremely easy to use SHA-512 encryption/decryption of strings or objects with a single method for each direction - easy!",
+	"main": "index.js",
+	"module": "main.js",
+	"scripts": {
+		"test": "jest",
+		"start": "node -r esm examples/examples.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.io/bemoje/shrine512"
+	},
+	"directories": {
+		"example": "examples",
+		"test": "test --coverage"
+	},
+	"keywords": [
+		"sha512",
+		"sha",
+		"512",
+		"encryption",
+		"descryption",
+		"encrypt",
+		"decrypt",
+		"crypt",
+		"easy",
+		"simple",
+		"object",
+		"string"
+	],
+	"author": "Benjamin Møller Jensen",
+	"license": "MIT",
+	"dependencies": {
+		"crypto": "^1.0.1",
+		"esm": "^3.2.25"
+	},
+	"devDependencies": {
+		"jest": "*",
+		"babel-core": "^6.26.3",
+		"babel-jest": "^23.6.0",
+		"babel-preset-env": "^1.7.0",
+		"math-random": "^1.0.4",
+		"randomstring": "^1.1.5"
+	}
+}
