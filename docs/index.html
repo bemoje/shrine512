@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>shrine512 1.0.0 | Documentation</title>
+  <meta name='description' content='Convenient and extremely easy to use SHA-512 encryption/decryption of strings or objects with a single method for each direction - easy!'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>shrine512</h3>
+          <div class='mb1'><code>1.0.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#createdecryptor'
+                  class="">
+                  createDecryptor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#createencryptor'
+                  class="">
+                  createEncryptor
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#shrine512'
+                  class="">
+                  Shrine512
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#shrine512'
+                  class="">
+                  Shrine512
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='createdecryptor'>
+      createDecryptor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns the function that performs decryption.</p>
+
+    <div class='pre p1 fill-light mt0'>createDecryptor</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>sigrid</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The secret phrase
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>sym</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    The object used as key in the weakmap. @see createKeyRetreiver
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='createencryptor'>
+      createEncryptor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Returns the function that performs the encryption.</p>
+
+    <div class='pre p1 fill-light mt0'>createEncryptor</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>sigrid</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The secret phrase
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>sym</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    The object used as key in the weakmap. @see createKeyRetreiver
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='shrine512'>
+      Shrine512
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Convenient and very VERY very easy to use 'AES-256-GCM' (SHA-512) encryption/decryption of strings, objects, filecontent, etc.</p>
+
+    <div class='pre p1 fill-light mt0'>Shrine512</div>
+  
+  
+
+  
+  <div>Version: 1.0.0</div>
+  <div>License: BSD-3 Clause</div>
+  <div>Author: Benjamin M�ller Jensen &lt;bemoje@gmail.com&gt;</div>
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='shrine512'>
+      Shrine512
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The exposed class. The constructor takes a secret encryption key and constructs an object from it that has two methods on it that can encrypt and decrypt respective, both strings and objects.</p>
+
+    <div class='pre p1 fill-light mt0'>new Shrine512()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>

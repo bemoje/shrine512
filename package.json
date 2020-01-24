@@ -1,47 +1,70 @@
 {
-	"name": "shrine512",
-	"version": "1.0.0",
-	"description": "Convenient and extremely easy to use SHA-512 encryption/decryption of strings or objects with a single method for each direction - easy!",
-	"main": "index.js",
-	"module": "main.js",
-	"scripts": {
-		"test": "jest",
-		"start": "node -r esm examples/examples.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.io/bemoje/shrine512"
-	},
-	"directories": {
-		"example": "examples",
-		"test": "test --coverage"
-	},
-	"keywords": [
-		"sha512",
-		"sha",
-		"512",
-		"encryption",
-		"descryption",
-		"encrypt",
-		"decrypt",
-		"crypt",
-		"easy",
-		"simple",
-		"object",
-		"string"
-	],
-	"author": "Benjamin Møller Jensen",
-	"license": "MIT",
-	"dependencies": {
-		"crypto": "^1.0.1",
-		"esm": "^3.2.25"
-	},
-	"devDependencies": {
-		"jest": "*",
-		"babel-core": "^6.26.3",
-		"babel-jest": "^23.6.0",
-		"babel-preset-env": "^1.7.0",
-		"math-random": "^1.0.4",
-		"randomstring": "^1.1.5"
-	}
+    "name": "shrine512",
+    "version": "1.0.0",
+    "main": "dist/shrine512.cjs.js",
+    "module": "dist/shrine512.esm.js",
+    "browser": "dist/shrine512.umd.js",
+    "description": "Convenient and extremely easy to use SHA-512 encryption/decryption of strings or objects with a single method for each direction - easy!",
+    "scripts": {
+        "example": "node -r esm example/shrine512.example.js",
+        "build": "rollup -c",
+        "test": "jest",
+        "dev": "rollup -c -w && documentation serve --watch src/main.js",
+        "docs": "documentation build src/** -f md -o docs/markdown && documentation build src/** -f html -o docs/html",
+        "start": "npm run example && npm run test && npm run dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.io/bemoje/shrine512"
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "sha512",
+        "aes",
+        "aes-256",
+        "aes-256-gcm",
+        "gcm",
+        "sha",
+        "512",
+        "encryption",
+        "decryption",
+        "shrine",
+        "shrine512",
+        "encrypt",
+        "decrypt",
+        "crypt",
+        "crypto",
+        "easy",
+        "simple",
+        "beginner",
+        "object",
+        "string"
+    ],
+    "author": {
+        "name": "Benjamin M�ller Jensen",
+        "email": "bemoje@gmail.com",
+        "web": "https://github.io/bemoje/"
+    },
+    "license": "BSD-3 Clause",
+    "dependencies": {
+        "esm": "^3.2.25"
+    },
+    "devDependencies": {
+        "@types/babel-core": "^6.25.6",
+        "@types/jest": "^24.9.1",
+        "@types/rollup-plugin-commonjs": "^9.3.1",
+        "@types/rollup-plugin-node-resolve": "^4.1.0",
+        "babel-core": "^6.26.3",
+        "babel-jest": "^23.6.0",
+        "babel-preset-env": "^1.7.0",
+        "documentation": "^12.1.4",
+        "jest": "^24.9.0",
+        "math-random": "^1.0.4",
+        "randomstring": "^1.1.5",
+        "rollup": "^1.29.1",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-node-resolve": "^5.2.0"
+    }
 }
