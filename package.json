@@ -1,6 +1,6 @@
 {
     "name": "shrine512",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "dist/shrine512.cjs.js",
     "module": "dist/shrine512.esm.js",
     "browser": "dist/shrine512.umd.js",
@@ -15,7 +15,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.io/bemoje/shrine512"
+        "url": "https://github.com/bemoje/shrine512"
     },
     "files": [
         "dist"
